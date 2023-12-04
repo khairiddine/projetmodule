@@ -5,14 +5,21 @@ st.set_page_config(
     page_icon=":Home:",
 )
 
+
+
 custom_css = """
     <style>
-        body {
-            background-color: #ffffff;
-        }
+[data-testid="stAppViewContainer"]{
+background-color: white;
+
+}
+[data-testid="stSidebar"]{
+  background-image: linear-gradient(to bottom right, green, white);
+
+
+}
     </style>
 """
-
 # Display the custom CSS using st.markdown
 st.markdown(custom_css, unsafe_allow_html=True)
 

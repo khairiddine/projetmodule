@@ -1,7 +1,27 @@
 import streamlit as st
 
+
+
+custom_css = """
+    <style>
+[data-testid="stAppViewContainer"]{
+background-color: 'white';
+
+}
+[data-testid="stSidebar"]{
+  background-image: linear-gradient(to bottom right, green, white);
+
+
+}
+       
+    </style>
+"""
+st.markdown(custom_css, unsafe_allow_html=True)
+
 contact_form = """
    <style>
+   
+  
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -10,6 +30,7 @@ contact_form = """
             align-items: center;
             justify-content: center;
             height: 200vh;
+            
            
         }
 
