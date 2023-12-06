@@ -2,15 +2,14 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Home",
-    page_icon=":Home:",
+    page_icon="",
 )
-
 
 
 custom_css = """
     <style>
 [data-testid="stAppViewContainer"]{
-background-color: white;
+background-color: 'white';
 
 }
 [data-testid="stSidebar"]{
@@ -18,6 +17,7 @@ background-color: white;
 
 
 }
+       
     </style>
 """
 # Display the custom CSS using st.markdown
@@ -43,6 +43,7 @@ st.markdown(
 
 st.image('pages/ECGIMAGE.jpg')
 st.divider()
+
 st.markdown(
     """
   L’électrocardiogramme (ECG) est un outil diagnostique dont la performance (sensibilité, spécificité) est variable selon les indications (voir ci-dessous) pour très nombreuses maladies cardiaques ou extracardiaques en association avec les données cliniques et souvent biologiques ou échocardiographiques [2].
@@ -58,6 +59,7 @@ st.divider()
 url ="https://www.youtube.com/watch?v=OtUPjnj_zC4"
 st.video(url, format="video/mp4", start_time=0)
 st.divider()
+
 st.markdown(
     """
     Le signal ECG permet de vérifier le bon fonctionnement du cœur chez un patient. Grâce à l’électrocardiographe,
